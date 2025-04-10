@@ -9,15 +9,45 @@
 <body>
     <header class="header"></header>
     <main class="main">
-        <!--Завдання 1-->
+
+
+
+
+        <!-- Завдання 1 -->
         <h2>Перевір в який рік ти народився</h2>
     <div class="container">
         <input type="number" id="yearInput" placeholder="Введіть рік народження">
         <button class="search-btn">🔍</button>
     </div>
     <p id="result"></p>
-    <!--Завдання 2-->
-    <!--Завдання 3-->
+
+
+
+
+    <!-- Завдання 2 -->
+    <input type="text" id="numberInput" placeholder="Введіть число" />
+    <button id="guessButton">Угадай число</button>
+    <p id="guessResult"></p>
+
+
+
+    <!-- Завдання 3 -->
+    <h1>Рицарь - Відьма - Дракон</h1>
+    <button id="knight">Рицар ⚔️</button>
+    <button id="dragon">Дракон 🐉</button>
+    <button id="witch">Відьма 🧙‍♀️</button>
+    <p id="bravoResult"></p>
+    <p id="bravoCounter">Рахунок</p>
+    <p id="ai-score">Комп’ютер - 0</p>
+    <p id="pl-score">Ви - 0</p>
+    <p id="computer-variant">Компьютер вибрав:</p>
+
+
+
+
+
+
+    <!-- Завдання 4 -->
     <h1>Калькулятор</h1>
     <input type="number" id="num1" placeholder="Введіть перше число">
   <input type="number" id="num2" placeholder="Введіть друге число">
@@ -28,11 +58,58 @@
     <button id="dilennyabutton">/</button>
   </div>
   <button id="clickbutton">Порахувати</button>
-  <input type="text" id="result" placeholder="Результат">
-    <!--Завдання 4-->
-    <!--Завдання 5-->
+  <input type="text" id="resultthree" placeholder="Результат">
+
+
+
+
+
+
+
+    <!-- Завдання 5 -->
+    <input id="input-time" placeholder="ВВЕДИ ВЖЕ ТОЙ ЧАС" type="text" />
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <p id="p-time">0</p>
+
+
+
+
+
+    <!-- Завдання 6 -->
+    <!-- Завдання 7 -->
+
+
+
+
+
+    <!-- Завдання 8 -->
+    <h1>Введіть 3 числа</h1>
+    <input type="text" id="num1" placeholder="Введіть число">
+    <input type="text" id="num2" placeholder="Введіть число">
+    <input type="text" id="num3" placeholder="Введіть число">
+    <div>
+        <button onclick="numberToNumber()">Знайти найбільше число</button>
+    </div>
+    <p id="result">Найбільше число, яке ви ввели: (число)</p>
+
+
+
+
+
+    <!-- Завдання 9 -->
+    <!-- Завдання 10 -->
     </main>
     <footer class="footer"></footer>
-    <script src="papkajs/script.js" type="module"></script>
+    <script src="papkajs/years.js" type="module"></script>
+    <script src="papkajs/time.js" type="module"></script>
+    <script src="papkajs/numberguess.js" type="module"></script>
+    <script src="papkajs/dkwgame.js" type="module"></script>
+    <script src="papkajs/calculator.js" type="module"></script>
+    <script src="papkajs/dinosaur.js" type="module"></script>
+    <script src="papkajs/football.js" type="module"></script>
+    <script src="papkajs/biggestnumber.js" type="module"></script>
+    <script src="papkajs/guessdoctor.js" type="module"></script>
 </body>
 </html>
