@@ -1,22 +1,38 @@
 //! Завдання 6 
+
 const cactusMoving = document.querySelector('.cactus');
 const dinoStaying = document.querySelector('.dinodino');
 let cactusLeft = 690 
-function dino(params) {
-    if (dinoStaying.style.bottom || 0 <= 0) {
-        dinoStaying.style.bottom = dinoStaying.style.bottom + 10 + 'px';
-        
+let dinoBottom = 0;
+document.addEventListener('keydown', dino)
+
+
+ function dino(i) {
+    i.preventDefault();
+    if (i.code === 'Space') {
+        let jumpInterval = setInterval(() => {
+            if (dinoBottom <= 80) {
+                dinoBottom += 5 ;
+                dinoStaying.style.bottom = dinoBottom + 'px';
+            }
+            else {
+                clearInterval(jumpInterval);
+                let fallInterval = setInterval(() => {
+                    if (dinoBottom > 0) {
+                        dinoBottom -= 5;
+                        dinoStaying.style.bottom = dinoBottom + 'px';
+                    } else {
+                        clearInterval(fallInterval);
+                    }
+                }, 20);
+            }
+        },20);
     }
 }
-//  setInterval(dinoStaying, 20);
 function cactus(params) {
     cactusLeft -= 10;
     cactusMoving.style.left = cactusLeft + 'px';
     if (cactusLeft < 0) {
         cactusLeft = 690; }
-    //  if (dinoStaying.style.bottom) {
-        
-    // }
-    console.log(parseInt(dinoStaying.style.bottom))/
-    }
-// setInterval(cactus, 20);
+}
+setInterval(cactus, 20);

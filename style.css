@@ -7,7 +7,6 @@
     bottom: 0px ;
     left: 50px;
     display:block;
-    background-image: url(/image/dino.png);
 }
 .cactus {
     width: 60px;
@@ -16,7 +15,6 @@
     bottom: 0 ;
     left: 690px;
     display: block;
-    background-image: url(/image/game-off-game-jam-gamedev-net-video-game-cactus-bce8027937cc559421685aafcf0ec923.png);
 }
 .gameboard {
     position: relative;
