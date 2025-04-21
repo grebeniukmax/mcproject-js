@@ -1,0 +1,77 @@
+
+/* Діно */
+.dinodino {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px ;
+    left: 50px;
+    display:block;
+    background-image: url(/image/dino.png);
+}
+.cactus {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0 ;
+    left: 690px;
+    display: block;
+    background-image: url(/image/game-off-game-jam-gamedev-net-video-game-cactus-bce8027937cc559421685aafcf0ec923.png);
+}
+.gameboard {
+    position: relative;
+    width: 720px;
+    height: 300px;
+    border: 2px dashed black ;
+    background-color: lightgrey;
+}
+@keyframes jumping {
+    0% {
+        bottom: 0px;
+    }
+    50% {
+        bottom: 100px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+/* .dinodino { */
+    /* animation: jumping 0.5s ease-in-out infinite; */
+/* }  */
+@keyframes cactus-move {
+    0% {
+        right: -30px;
+    }
+    100% {
+        right: 720px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Футбол */
+  .field {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    height: 300px;
+    background-color: #70b865;
+    border: 3px solid black;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  
+  .ball {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
