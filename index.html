@@ -3,16 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Js-Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/biggestnumber.css">
+    <link rel="stylesheet" href="/css/calculator.css">
+    <link rel="stylesheet" href="/css/numberguesse.css">
+    <link rel="stylesheet" href="/css/slider.css">
+    <link rel="stylesheet" href="/css/time.css">
+    <link rel="stylesheet" href="css/vcheni.css">
+    <link rel="stylesheet" href="/css/years.css">
+    <link rel="stylesheet" href="/css/dino.css">
+    <link rel="stylesheet" href="/css/football.css">
+    <link rel="stylesheet" href="/css/dkwgame.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header"></header>
+    <header class="header">
+      <ul class="ul-header">
+        <li class="header-items">
+          <svg class="svg-logo">
+            <use href="./image/symbol-defs.svg#icon-Vector-Logo" class="use"></use>
+          </svg>
+        </li>
+        <li class="header-items">
+          <p class="item-item-header">Інтерактив</p>
+        </li>
+        <li class="header-items">
+          <svg class="svg-header-strela">
+            <use href="./image/symbol-defs.svg#icon-Vector-2" class="use"></use>
+          </svg>
+        </li>
+        <li class="header-items">
+          <p class="item-item-header">Наша команда</p>
+        </li>
+        <li class="header-items">
+          <p class="item-item-header">Контакти</p>
+        </li>
+        <li class="header-items">
+          <img src="/image/Group 71.png" alt="" class="tema">
+        </li>
+        <li class="header-items">
+          <p class="item-item-header">Вітаю User!</p>
+        </li>
+      </ul>
+    </header>
+
+
+
+
     <main class="main">
-
-
-
-
+      <img src="" alt="">
+      <h1 class="h1">Популярні інетрактивні ігри</h1>
+      <div class="div-line"></div>
         <!-- Завдання 1 -->
         <h2>Перевір в який рік ти народився</h2>
     <div class="container">
@@ -78,14 +122,19 @@
 
 
     <!-- Завдання 6 -->
-<div class="gameboard">
-  <img src="/image/dino.png" alt="" class="dinodino"></img>
-  <img src="/image/game-off-game-jam-gamedev-net-video-game-cactus-bce8027937cc559421685aafcf0ec923.png" alt="" class="cactus" ></img>
-</div>
+    <div class="game-container">
+      <button id="startButton">Старт</button>
+      <div class="gameboard">
+        <img src="/image/dino.png" alt="Динозавр" class="dinodino">
+        <img src="/image/game-off-game-jam-gamedev-net-video-game-cactus-bce8027937cc559421685aafcf0ec923.png" alt="Кактус" class="cactus">
+      </div>
+    </div>
+
+
     <!-- Завдання 7 -->
     <h1>Футбол</h1>
   <div class="field" id="field">
-    <img src="pngwing.com (1).png" alt="ball" id="ball" class="ball">
+    <img src="/image/pngwing.com (1).png" alt="ball" id="ball" class="ball">
   </div>
 
 
@@ -106,17 +155,103 @@
 
 
     <!-- Завдання 9 -->
+    <div class="team-slider">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <div class="slide active">
+            <img src="/image/firstmakaka.jpg" alt="Спеціаліст 1">
+            <h3>Гребенюк Максим</h3>
+            <p>Зробив все,але не все</p>
+          </div>
+          <div class="slide">
+            <img src="/image/secondmakaka.jpg" alt="Спеціаліст 2">
+            <h3>І знову він!</h3>
+            <p>Молодець,але не до кінця</p>
+          </div>
+          <div class="slide">
+            <img src="/image/thirdmakaka.jpg" alt="Спеціаліст 3">
+            <h3>Також він</h3>
+            <p>Сподіваюсь проект буде прийнятий</p>
+          </div>
+        </div>
+      </div>
+      <button class="slider-arrow prev" disabled>&lt;</button>
+      <button class="slider-arrow next">&gt;</button>
+    </div>
     <!-- Завдання 10 -->
+    <p class="p-name">Обери вченого/их</p>
+    <ul class="ul-sc" id="scientist-list"></ul>
+    <ul class="main-scients">
+      <ul class="bett-scients">
+        <ul class="left-ul">
+          <li>
+            <button class="button-scient" id="scientist-question">
+              Які вчені народилися в 19 ст.
+            </button>
+          </li>
+          <li>
+            <button class="button-scient" id="scientist-question2">
+              Відсортувати вчених за алфавітом
+            </button>
+          </li>
+          <li>
+            <button class="button-scient" id="scientist-question3">
+              Відсортувати вчених за кількістю прожитих років
+            </button>
+          </li>
+          <li>
+            <button class="button-scient" id="scientist-question4">
+              Знайти вченого, який народився найпізніше
+            </button>
+          </li>
+        </ul>
+        <ul class="right-ul">
+          <li>
+            <button class="button-scient" id="scientist-question5">
+              Знайти рік народження Albert Einstein
+            </button>
+          </li>
+          <li>
+            <button class="button-scient" id="scientist-question6">
+              Знайти вчених, прізвища яких починаються на літеру “C”
+            </button>
+          </li>
+          <li>
+            <button class="button-scient" id="scientist-question7">
+              Видалити всіх вчених, ім’я яких починається на “A”
+            </button>
+          </li>
+          <li>
+            <button
+              style="width: 368px"
+              class="button-scient"
+              id="scientist-question8"
+            >
+              Знайти вченого, який прожив найдовше і вченого, який прожив
+              найменше
+            </button>
+          </li>
+        </ul>
+      </ul>
+      <li>
+        <button class="button-scient" id="scientist-question9">
+          Знайти вчених, в яких співпадають перші літери імені і прізвища
+        </button>
+      </li>
+    </ul>
+  </div>
     </main>
     <footer class="footer"></footer>
-    <script src="papkajs/years.js" type="module"></script>
-    <script src="papkajs/time.js" type="module"></script>
-    <script src="papkajs/numberguess.js" type="module"></script>
-    <script src="papkajs/dkwgame.js" type="module"></script>
-    <script src="papkajs/calculator.js" type="module"></script>
-    <script src="papkajs/dinosaur.js" type="module"></script>
-    <script src="papkajs/football.js" type="module"></script>
-    <script src="papkajs/biggestnumber.js" type="module"></script>
-    <script src="papkajs/guessdoctor.js" type="module"></script>
+    <script src="js/years.js" type="module"></script>
+    <script src="js/time.js" type="module"></script>
+    <script src="js/numberguess.js" type="module"></script>
+    <script src="js/dkwgame.js" type="module"></script>
+    <script src="js/calculator.js" type="module"></script>
+    <script src="js/dinosaur.js" type="module"></script>
+    <script src="js/football.js" type="module"></script>
+    <script src="js/biggestnumber.js" type="module"></script>
+    <script src="js/guessdoctor.js" type="module"></script>
+    <script src="js/slider.js" type="module"></script>
+    <script src="js/vcheni.js" type="module"></script>
 </body>
 </html>

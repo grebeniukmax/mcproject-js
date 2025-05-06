@@ -1,0 +1,27 @@
+.ul-header {
+  display: flex;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  list-style: none;
+}
+.header-items {
+padding-top: 32px;
+}
+.svg-header-strela {
+width: 5px;
+height: 9px;
+}
+.item-item-header {
+    margin-top: 32px;
+}
+.svg-logo {
+width: 93px;
+height: 38px;
+padding-top: 21px;
+}
+.tema {
+width: 40px;
+height: 20px;
+padding-top: 30px;
+}
+

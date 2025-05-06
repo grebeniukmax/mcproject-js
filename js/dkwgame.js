@@ -18,6 +18,7 @@ dragon.addEventListener("click", () => setChoice(2));
 witch.addEventListener("click", () => setChoice(3));
 
 function setChoice(choice) {
+
     plChoice = choice;
     bravoGame();
 }

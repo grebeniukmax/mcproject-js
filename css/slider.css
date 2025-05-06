@@ -1,0 +1,71 @@
+.team-slider {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .slider-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    min-width: 100%;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid grey;
+  }
+  
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: grey;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s;
+  }
+  
+  .slider-arrow:hover:not(:disabled) {
+    background: grey ;
+  }
+  
+  .slider-arrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .prev {
+    left: 10px;
+    right : 10px ;
+  }
+  
+  .next {
+    right: 10px;
+  }
